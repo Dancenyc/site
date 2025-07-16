@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DanceNYC Event Corp | NYC Dance Classes & Events</title>
+  <meta name="description" content="DanceNYC Event Corp hosts weekly dance socials and classes in NYC. Book private lessons, join group classes, or hire us for corporate and special events.">
+  <meta name="keywords" content="NYC dance classes, private dance lessons, wedding choreography, bachata, salsa, dance events NYC">
+  <meta property="og:title" content="DanceNYC Event Corp">
+  <meta property="og:description" content="Join DanceNYC for weekly socials, classes, and private dance experiences in NYC!">
+  <meta property="og:image" content="Bustling New York Email Header.png">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { animation: fadeIn 1s ease-in; position: relative; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    img:hover { transform: scale(1.03); transition: transform 0.3s ease; }
+    a:hover { color: #60a5fa; transition: color 0.3s ease; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 1s ease, transform 1s ease; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    @media (max-width: 640px) {
+      .header-text { position: static !important; background: none !important; padding: 1rem 0 1rem 0 !important; text-align: center; }
+    }
+    #backToTop { position: fixed; bottom: 20px; right: 20px; background-color: #1f2937; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.3); display: none; align-items: center; justify-content: center; z-index: 50; }
+    #backToTop.show { display: flex; }
+  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+  <header class="relative text-white text-center">
+    <div class="relative">
+      <img src="Bustling New York Email Header.png" alt="Header Background" class="w-full object-contain">
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-black bg-opacity-50 header-text">
+        <h1 class="text-3xl font-bold">DanceNYC Event Corp</h1>
+        <p class="mt-2">Weekly Socials, Classes, and Custom Dance Experiences</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6 space-y-12">
+    <section class="reveal">
+      <h2 class="text-2xl font-semibold mb-4">Weekly Socials</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <img src="Copy of Tuesday new  (1).png" alt="Tuesday Flyer" class="rounded shadow-md w-full h-auto object-contain">
+        <img src="THURSDAYS.png" alt="Thursdays Flyer" class="rounded shadow-md w-full h-auto object-contain">
+        <img src="Copy of rockaway with specific band.png" alt="Rockaway Flyer" class="rounded shadow-md w-full h-auto object-contain">
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-8 reveal">
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Connect With Us</h2>
+        <p><i class="fas fa-envelope mr-2 text-blue-400"></i><a href="mailto:dancenyc.info@gmail.com" class="text-blue-400 hover:underline">dancenyc.info@gmail.com</a></p>
+        <p><i class="fab fa-instagram mr-2 text-pink-400"></i><a href="https://instagram.com/dancenyc.events" target="_blank" class="text-blue-400 hover:underline">@dancenyc.events</a></p>
+        <p><i class="fab fa-facebook mr-2 text-blue-600"></i><a href="https://facebook.com/Dance-NYC-Events-Corp" target="_blank" class="text-blue-400 hover:underline">Dance NYC Events Corp</a></p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">What We Offer</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Private Dance Classes</li>
+          <li>Group Dance Classes</li>
+          <li>Corporate Events</li>
+          <li>Birthday Celebrations</li>
+          <li>Wedding Choreography</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 reveal">
+      <img src="space1.jpeg" alt="Dance Space 1" class="rounded shadow-md w-full h-auto">
+      <img src="unnamed.png" alt="Dance Space 2" class="rounded shadow-md w-full h-auto">
+    </section>
+
+    <section class="reveal border border-blue-500 p-6 rounded-md">
+      <h2 class="text-2xl font-semibold mb-4">Let Us Bother You</h2>
+      <p class="mb-4">Sign up for updates, flyers, and the occasional flirty reminder to come dance.</p>
+      <form class="flex flex-col sm:flex-row gap-4" action="#" method="POST">
+        <input type="email" placeholder="Enter your email" class="p-2 rounded text-black flex-1" required>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-black text-center text-sm text-gray-400 py-4">
+    &copy; 2025 DanceNYC Event Corp. All rights reserved.
+  </footer>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script>
+    const backToTopButton = document.getElementById('backToTop');
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+      document.querySelectorAll('.reveal').forEach(reveal => {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveal.getBoundingClientRect().top;
+        const elementVisible = 100;
+        if (elementTop < windowHeight - elementVisible) {
+          reveal.classList.add('active');
+        }
+      });
+    };
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
