@@ -1,58 +1,45 @@
-<section class="reveal flex flex-col lg:flex-row gap-6 items-start justify-center">
-  <img src="space1.jpeg" alt="Dance Space 1" class="rounded shadow-md w-full lg:w-1/4 h-auto max-h-72 object-cover">
-  <div class="text-center flex-1">
-    <h2 class="text-2xl font-semibold mb-4">What We Offer</h2>
-    <ul class="list-disc list-inside space-y-2 mb-6 text-left inline-block">
-      <li>Private Dance Classes</li>
-      <li>Group Dance Classes</li>
-      <li>Corporate Events</li>
-      <li>Birthday Celebrations</li>
-      <li>Wedding Choreography</li>
-    </ul>
-  </div>
-  <img src="unnamed.png" alt="Dance Space 2" class="rounded shadow-md w-full lg:w-1/4 h-auto max-h-72 object-cover">
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DanceNYC Event Corp</title>
+  <meta name="description" content="Weekly dance socials, classes, and private events in NYC." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body { animation: fadeIn 1s ease-in; }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 1s, transform 1s; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
 
-<section class="reveal grid grid-cols-1 md:grid-cols-2 gap-6">
-  <div>
-    <p class="text-center text-lg font-semibold mb-2">FROM PROFESSIONAL...</p>
-    <div class="aspect-w-16 aspect-h-9 w-full rounded shadow-md overflow-hidden">
-      <iframe 
-        src="https://www.youtube.com/embed/sY0cNSbLlL8" 
-        title="DanceNYC Professional Video" 
-        frameborder="0" 
-        allowfullscreen 
-        class="w-full h-64 sm:h-[300px] rounded">
-      </iframe>
+  <header class="relative text-white text-center">
+    <div class="relative">
+      <img src="Bustling New York Email Header.png" alt="Header" class="w-full object-contain">
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-black bg-opacity-50">
+        <h1 class="text-3xl font-bold">DanceNYC Event Corp</h1>
+        <p class="mt-2">Weekly Socials, Classes, and Custom Dance Experiences</p>
+      </div>
     </div>
-  </div>
-  <div>
-    <p class="text-center text-lg font-semibold mb-2">...TO PARTY</p>
-    <div class="aspect-w-16 aspect-h-9 w-full rounded shadow-md overflow-hidden">
-      <iframe 
-        src="https://www.youtube.com/embed/2ntx9Yan_EQ" 
-        title="DanceNYC Party Video" 
-        frameborder="0" 
-        allowfullscreen 
-        class="w-full h-64 sm:h-[300px] rounded">
-      </iframe>
-    </div>
-  </div>
-</section>
+  </header>
 
-<section class="reveal border border-blue-500 p-6 rounded-md grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-  <div>
-    <h2 class="text-2xl font-semibold mb-4">Connect With Us</h2>
-    <p><i class="fas fa-envelope mr-2 text-blue-400"></i><a href="mailto:dancenyc.info@gmail.com" class="text-blue-400 hover:underline">dancenyc.info@gmail.com</a></p>
-    <p><i class="fab fa-instagram mr-2 text-pink-400"></i><a href="https://instagram.com/dancenyc.events" target="_blank" class="text-blue-400 hover:underline">@dancenyc.events</a></p>
-    <p><i class="fab fa-facebook mr-2 text-blue-600"></i><a href="https://facebook.com/Dance-NYC-Events-Corp" target="_blank" class="text-blue-400 hover:underline">Dance NYC Events Corp</a></p>
-  </div>
-  <div>
-    <h2 class="text-2xl font-semibold mb-4">Let Us Bother You</h2>
-    <p class="mb-4">Sign up for updates, flyers, and the occasional flirty reminder to come dance.</p>
-    <form class="flex flex-col sm:flex-row gap-4" action="#" method="POST">
-      <input type="email" placeholder="Enter your email" class="p-2 rounded text-black flex-1" required>
-      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Subscribe</button>
-    </form>
-  </div>
-</section>
+  <main class="max-w-6xl mx-auto p-6 space-y-12">
+
+    <section class="reveal flex flex-col lg:flex-row gap-6 items-start justify-center">
+      <img src="space1.jpeg" alt="Dance Space 1" class="rounded shadow-md w-full lg:w-1/4 h-auto max-h-72 object-cover">
+      <div class="text-center flex-1">
+        <h2 class="text-2xl font-semibold mb-4">What We Offer</h2>
+        <ul class="list-disc list-inside space-y-2 mb-6 text-left inline-block">
+          <li>Private Dance Classes</li>
+          <li>Group Dance Classes</li>
+          <li>Corporate Events</li>
+          <li>Birthday Celebrations</li>
+          <li>Wedding Choreography</li>
+        </ul>
+      </div>
+      <img src="unnamed.png" alt="Dance Space 2" class="rounded shadow-md w-full lg:w-1/4 h
