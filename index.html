@@ -5,20 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DanceNYC Event Corp</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
   <style>
     .text-metallic-gold {
-      background: linear-gradient(to right, #d4af37, #c5a254);
+      background: linear-gradient(to right, #c5a254, #a37b33);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
-      font-weight: bold;
     }
-    .cinzel {
-      font-family: 'Cinzel Decorative', serif;
+    .heading-style {
+      font-family: 'Playfair Display', serif;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -38,37 +36,33 @@
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=3088213874704826&ev=PageView&noscript=1"/></noscript>
 
-  <!-- Header Image -->
   <header class="relative">
     <img src="header-nyc.png" alt="DanceNYC Header" class="w-full object-cover max-h-[600px]">
+    <div class="absolute inset-x-0 top-6 text-center">
+      <h1 class="text-4xl font-bold text-white">DanceNYC Event Corp</h1>
+      <nav class="flex justify-center mt-4 space-x-6 text-lg">
+        <a href="#" class="text-metallic-gold hover:underline">HOME</a>
+        <a href="#" class="text-metallic-gold hover:underline">DANCE EVENTS</a>
+        <a href="#" class="text-metallic-gold hover:underline">PRIVATE EVENTS</a>
+        <a href="#" class="text-metallic-gold hover:underline">ABOUT</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Branding & Navigation -->
-  <section class="text-center py-6">
-    <h1 class="text-4xl font-bold text-metallic-gold">DanceNYC Event Corp</h1>
-    <nav class="flex justify-center gap-6 py-4 text-metallic-gold font-semibold">
-      <a href="#" class="hover:underline">HOME</a>
-      <a href="#" class="hover:underline">DANCE EVENTS</a>
-      <a href="#" class="hover:underline">PRIVATE EVENTS</a>
-      <a href="#" class="hover:underline">ABOUT</a>
-    </nav>
-  </section>
+  <main class="px-4 py-16 space-y-16">
+    <section class="text-center space-y-4">
+      <h2 class="text-3xl sm:text-4xl heading-style text-white">NIGHTLIFE ~ DANCE CLASSES ~ CATERING</h2>
+      <p class="text-md sm:text-lg max-w-3xl mx-auto">
+        Bringing the rhythm of New York City to life. <br />
+        We curate unforgettable nights — from sizzling dance socials and dynamic classes, to corporate events, weddings, and private parties with full-service entertainment, live music, and catering. <br />
+        Whether it’s a night out, a team celebration, or a once-in-a-lifetime event — we set the stage, you make the memories.
+      </p>
+    </section>
 
-  <!-- Main Statement -->
-  <section class="text-center px-4 py-8">
-    <h2 class="text-3xl md:text-4xl cinzel text-metallic-gold mb-2">NIGHTLIFE ~ DANCE CLASSES ~ CATERING</h2>
-    <p class="text-lg max-w-3xl mx-auto text-yellow-200">
-      Bringing the rhythm of New York City to life.<br>
-      We curate unforgettable nights — from sizzling dance socials and dynamic classes, to corporate events, weddings, and private parties with full-service entertainment, live music, and catering. Whether it’s a night out, a team celebration, or a once-in-a-lifetime event — we set the stage, you make the memories.
-    </p>
-  </section>
-
-  <!-- Legacy Main Content -->
-  <main class="px-4 py-8 space-y-16">
     <section class="reveal flex flex-col lg:flex-row gap-6 items-start justify-center">
       <img src="space1.jpeg" alt="Dance Space 1" class="rounded shadow-md w-full lg:w-1/4 h-auto max-h-72 object-cover">
       <div class="text-center flex-1">
-        <h2 class="text-2xl font-semibold mb-4 text-center text-yellow-400">What We Offer</h2>
+        <h2 class="text-2xl font-semibold mb-4 text-yellow-400">What We Offer</h2>
         <ul class="list-disc list-inside space-y-2 mb-6 text-left inline-block">
           <li>Private Dance Classes</li>
           <li>Group Dance Classes</li>
