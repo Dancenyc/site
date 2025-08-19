@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DanceNYC Event Corp</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --rich-gold: #d4af37;
+    body {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+    .fancy {
+      font-family: 'Great Vibes', cursive;
     }
   </style>
   <!-- Meta Pixel Code -->
@@ -29,32 +38,20 @@
 <body class="bg-black text-white">
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=3088213874704826&ev=PageView&noscript=1"/></noscript>
-
-  <!-- Header -->
   <header class="relative">
-    <img src="/mnt/data/Bustling New York Email Header (5).png" alt="DanceNYC Header" class="w-full object-cover max-h-[700px]">
+    <img src="/mnt/data/Bustling New York Email Header (5).png" alt="DanceNYC Header" class="w-full object-cover max-h-[600px]">
     <div class="absolute inset-x-0 bottom-6 text-center">
-      <h1 class="text-4xl font-bold" style="color: var(--rich-gold)">DanceNYC Event Corp</h1>
+      <h1 class="text-4xl font-bold text-yellow-300 drop-shadow-lg">DanceNYC Event Corp</h1>
+      <p class="text-lg text-yellow-200 drop-shadow">Weekly Socials, Classes, and Custom Dance Experiences</p>
     </div>
   </header>
 
-  <!-- Navigation -->
-  <nav class="flex justify-center gap-8 py-4 text-lg font-semibold" style="color: var(--rich-gold)">
-    <a href="#" class="hover:underline">HOME</a>
-    <a href="#" class="hover:underline">DANCE EVENTS</a>
-    <a href="#" class="hover:underline">PRIVATE EVENTS</a>
-    <a href="#" class="hover:underline">ABOUT</a>
-  </nav>
+  <main class="px-4 py-12 space-y-16 text-center">
+    <nav class="flex justify-center space-x-6 text-lg text-yellow-300 font-semibold py-4">
+      <a href="#" class="hover:text-yellow-100">HOME</a>
+      <a href="#" class="hover:text-yellow-100">DANCE EVENTS</a>
+      <a href="#" class="hover:text-yellow-100">PRIVATE EVENTS</a>
+      <a href="#" class="hover:text-yellow-100">ABOUT</a>
+    </nav>
 
-  <!-- Tagline -->
-  <section class="text-center px-4">
-    <h2 class="text-3xl font-bold mb-2" style="color: var(--rich-gold)">NIGHTLIFE ~ DANCE CLASSES ~ CATERING</h2>
-    <p class="max-w-3xl mx-auto text-lg">
-      Bringing the rhythm of New York City to life. We curate unforgettable nights — from sizzling dance socials and dynamic classes, to corporate events, weddings, and private parties with full-service entertainment, live music, and catering. Whether it’s a night out, a team celebration, or a once-in-a-lifetime event — we set the stage, you make the memories.
-    </p>
-  </section>
-
-  <main class="px-4 py-8 space-y-16">
-    <!-- What We Offer -->
-    <section class="reveal flex flex-col lg:flex-row gap-6 items-start justify-center">
-      <img src="space1.jpeg" alt="Dance Space 1" class="rounded
+    <sect
